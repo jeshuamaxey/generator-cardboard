@@ -24,9 +24,11 @@ module.exports = yeoman.generators.Base.extend({
 
     // welcome message
     if (!this.options['skip-welcome-message']) {
-      this.log(require('yosay')());
+      this.log(require('yosay')('Let\'s make this an app to remember!'));
       this.log(chalk.magenta(
-        'I\'m gonna make this an app to remeber!'
+        'Out of the box I include HTML5 boilerplate, a Gruntfile.js to\n' +
+        'build your app and some boilerplate to launch a virtual reality\n' +
+        'web app from the landing page.\n'
       ));
     }
 
