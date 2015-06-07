@@ -2,6 +2,8 @@
 
 [Yeoman](http://yeoman.io) generator that scaffolds out a web app complete with a virtual reality environment built with [THREE.js](http://threejs.org) which is [Google Cardboard](http://g.co/cardboard) compatible.
 
+![](http://i.imgur.com/ojYuQtb.png)
+
 ## Features
 
 * CSS Autoprefixing
