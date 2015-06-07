@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Generator Cardboard by jeshuamaxey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Generator Cardboard</h1>
+      <h2 class="project-tagline">Yeoman generator that scaffolds out a Google Cardboard compatible virtual reality web app</h2>
+      <a href="https://github.com/jeshuamaxey/generator-cardboard" class="btn">View on GitHub</a>
+      <a href="https://github.com/jeshuamaxey/generator-cardboard/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/jeshuamaxey/generator-cardboard/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="generator-cardboard-" class="anchor" href="#generator-cardboard-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generator Cardboard <a href="http://travis-ci.org/jeshuamaxey/generator-cardboard"><img src="https://secure.travis-ci.org/jeshuamaxey/generator-cardboard.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<p><a href="http://yeoman.io">Yeoman</a> generator that scaffolds out a web app complete with a virtual reality environment built with <a href="http://threejs.org">THREE.js</a> which is <a href="http://g.co/cardboard">Google Cardboard</a> compatible.</p>
+
+<p><img src="http://i.imgur.com/ojYuQtb.png" alt=""></p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>CSS Autoprefixing</li>
+<li>Built-in preview server with LiveReload</li>
+<li>Automagically compile Sass</li>
+<li>Automagically lint your scripts</li>
+<li>Automagically wire up your Bower components with <a href="#third-party-dependencies">grunt-wiredep</a>.</li>
+<li>Awesome Image Optimization (via OptiPNG, pngquant, jpegtran and gifsicle)</li>
+<li>Mocha Unit Testing with PhantomJS</li>
+<li>Bootstrap for Sass (Optional)</li>
+<li>Leaner Modernizr builds (Optional)</li>
+</ul>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<ul>
+<li>Install: <code>npm install -g generator-cardboard</code>
+</li>
+<li>Run: <code>yo cardboard</code>
+</li>
+<li>Run <code>grunt</code> for building and <code>grunt serve</code> for preview. <code>--allow-remote</code> option for remote access.</li>
+</ul>
+
+<h4>
+<a id="third-party-dependencies" class="anchor" href="#third-party-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Third-Party Dependencies</h4>
+
+<p><em>(HTML/CSS/JS/Images/etc)</em></p>
+
+<p>Third-party dependencies are managed with <a href="https://github.com/stephenplusplus/grunt-wiredep">grunt-wiredep</a>. Add new dependencies using <strong>Bower</strong> and then run the <strong>Grunt</strong> task to load them:</p>
+
+<div class="highlight highlight-sh"><pre>$ bower install --save jquery
+$ grunt wiredep</pre></div>
+
+<p>This works if the package author has followed the <a href="https://github.com/bower/bower.json-spec">Bower spec</a>. If the files are not automatically added to your source code, check with the package's repo for support and/or file an issue with them to have it updated.</p>
+
+<p>To manually add dependencies, <code>bower install --save depName</code> to get the files, then add a <code>script</code> or <code>style</code> tag to your <code>index.html</code> or another appropriate place.</p>
+
+<p>The components are installed in the root of the project at <code>/bower_components</code>. To reference them from index.html, use <code>src="bower_components"</code> or <code>src="/bower_components"</code>. Treat the <code>bower_components</code> directory as if it was a sibling to <code>index.html</code>.</p>
+
+<p><em>Testing Note</em>: a project checked into source control and later checked out needs to have <code>bower install</code> run from the <code>test</code> folder as well as from the project root.</p>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<ul>
+<li>
+<p><code>--skip-install</code></p>
+
+<p>Skips the automatic execution of <code>bower</code> and <code>npm</code> after scaffolding has finished.</p>
+</li>
+<li>
+<p><code>--test-framework=&lt;framework&gt;</code></p>
+
+<p>Defaults to <code>mocha</code>. Can be switched for another supported testing framework like <code>jasmine</code>.</p>
+</li>
+</ul>
+
+<h2>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribute</h2>
+
+<p>See the <a href="https://github.com/yeoman/yeoman/blob/master/contributing.md">yeoman contributing docs</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://opensource.org/licenses/bsd-license.php">BSD license</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jeshuamaxey/generator-cardboard">Generator Cardboard</a> is maintained by <a href="https://github.com/jeshuamaxey">jeshuamaxey</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-63850331-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
+
