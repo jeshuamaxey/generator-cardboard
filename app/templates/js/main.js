@@ -23,7 +23,7 @@ function launchVR () {
   // create the iframe for the vr experience
   var vrViewer = document.createElement('iframe');
   vrViewer.id = 'vrViewer';
-  vrViewer.src = '/vr/';
+  vrViewer.src = 'vr/';
   vrViewer.height = '100%';
   vrViewer.width = '100%';
   vrViewer.frameBorder = '0';
