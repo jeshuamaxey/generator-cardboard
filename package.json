@@ -1,6 +1,6 @@
 {
   "name": "generator-cardboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Scaffold out a web based Google cardboard VR experience",
   "author": "Jeshua Maxey (https://jeshua.co)",
   "license": "BSD",
