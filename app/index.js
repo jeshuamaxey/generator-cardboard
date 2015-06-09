@@ -189,13 +189,15 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    this.invoke(this.options['test-framework'], {
-      options: {
-        'skip-message': this.options['skip-install-message'],
-        'skip-install': this.options['skip-install']
-      }
+    this.on('end', function () {
+      this.invoke(this.options['test-framework'], {
+        options: {
+          'skip-message': this.options['skip-install-message'],
+          'skip-install': this.options['skip-install']
+        }
+      });
     });
-
+  
     if (!this.options['skip-install']) {
       this.installDependencies({
         skipMessage: this.options['skip-install-message'],
