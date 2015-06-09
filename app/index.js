@@ -196,13 +196,13 @@ module.exports = yeoman.generators.Base.extend({
           'skip-install': this.options['skip-install']
         }
       });
-
-      if (!this.options['skip-install']) {
-        this.installDependencies({
-          skipMessage: this.options['skip-install-message'],
-          skipInstall: this.options['skip-install']
-        });
-      }
     });
+  
+    if (!this.options['skip-install']) {
+      this.installDependencies({
+        skipMessage: this.options['skip-install-message'],
+        skipInstall: this.options['skip-install']
+      });
+    }
   }
 });
