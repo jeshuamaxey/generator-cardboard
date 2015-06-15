@@ -2,6 +2,8 @@
 
 [Yeoman](http://yeoman.io) generator that scaffolds out a web app complete with a virtual reality environment built with [THREE.js](http://threejs.org) which is [Google Cardboard](http://g.co/cardboard) compatible.
 
+An example of what is generated out of the box can be found at [http://jeshua.co/labs/demos/generator-cardboard/](http://jeshua.co/labs/demos/generator-cardboard/).
+
 ![](http://i.imgur.com/ojYuQtb.png)
 
 ## Features
@@ -21,7 +23,6 @@
 - Install: `npm install -g generator-cardboard`
 - Run: `yo cardboard`
 - Run `grunt` for building and `grunt serve` for preview. `--allow-remote` option for remote access.
-
 
 #### Third-Party Dependencies
 
