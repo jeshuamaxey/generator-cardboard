@@ -2,6 +2,8 @@
 
 [Yeoman](http://yeoman.io) generator that scaffolds out a web app complete with a virtual reality environment built with [THREE.js](http://threejs.org) which is [Google Cardboard](http://g.co/cardboard) compatible.
 
+An example of what is generated out of the box can be found at [http://jeshua.co/labs/demos/generator-cardboard/](http://jeshua.co/labs/demos/generator-cardboard/).
+
 ![](http://i.imgur.com/ojYuQtb.png)
 
 ## Features
@@ -22,6 +24,35 @@
 - Run: `yo cardboard`
 - Run `grunt` for building and `grunt serve` for preview. `--allow-remote` option for remote access.
 
+#### Directory Structure
+
+Below is an incomplete listing of the generated directory structure. The `vr/` directory is what is generated when the single empty scene VR environment is chosen, the source for which can be found [here](http://vr.chromeexperiments.com/).
+
+```
+├── app                   # contains all publicly accessible files 
+│   ├── css               # site css
+│   │   └── main.css
+│   ├── js                # site javascript
+│   │   ├── main.js
+│   │   └── util.js
+│   ├── vr                # contains the files for your VR application
+│   │   ├── js
+│   │   │   └── third-party
+│   │   │       └── threejs
+│   │   │           ├── DeviceOrientationControls.js
+│   │   │           ├── OrbitControls.js
+│   │   │           ├── StereoEffect.js
+│   │   │           └── three.js
+│   │   ├── textures
+│   │   │   └── patterns
+│   │   │       └── checker.png
+│   └── index.html        # site landing page
+├── test                  # tests
+│   ├── spec
+│   │   └── test.js
+│   └── index.html
+└── Gruntfile.js          # defines build tasks
+```
 
 #### Third-Party Dependencies
 
