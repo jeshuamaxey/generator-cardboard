@@ -26,7 +26,7 @@ An example of what is generated out of the box can be found at [http://jeshua.co
 
 #### Directory Structure
 
-Below is an incomplete listing of the generated directory structure. The `vr/` directory is what is generated when the single empty scene VR environment is chosen, the source of which can be found [here](http://vr.chromeexperiments.com/).
+Below is an incomplete listing of the generated directory structure. The `vr/` directory is what is generated when the single empty scene VR environment is chosen, the source for which can be found [here](http://vr.chromeexperiments.com/).
 
 ```
 ├── app                   # contains all publicly accessible files 
