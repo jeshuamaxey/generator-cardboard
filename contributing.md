@@ -47,7 +47,7 @@ Please ensure any pull requests follow this closely. If you notice existing code
 
 This project follows the git flow branching model. For those unfamiliar, Atlassian provide a [good primer](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) which is where I pinched the below graphic from.
 
-![](git-flow.svg)
+![](http://i.imgur.com/4UZwO5Z.png)
 
 ## Git Commit Messages
 
