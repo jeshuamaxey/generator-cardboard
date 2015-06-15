@@ -86,7 +86,7 @@ The components are installed in the root of the project at `/bower_components`. 
 
 ## Contribute
 
-See the [yeoman contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md).
+See the [contributing docs](https://github.com/jeshuamaxey/generator-cardboard/blob/master/contributing.md).
 
 ## License
 
