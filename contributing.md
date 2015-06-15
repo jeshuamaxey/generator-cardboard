@@ -38,6 +38,7 @@ Please ensure any pull requests follow this closely. If you notice existing code
   - `feature/my_cool_feature` for feature branches
   - `release/v1.2.3` for release branches
   - `hotfix/missing_dependency` for hot fixes or release maintenance
+* Format git commit messages **properly** (see below for more on this)
 * Lint the code by running `grunt`
 * Add relevant tests to cover the change
 * Make sure test-suite passes: `npm test`
@@ -47,3 +48,14 @@ Please ensure any pull requests follow this closely. If you notice existing code
 This project follows the git flow branching model. For those unfamiliar, Atlassian provide a [good primer](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) which is where I pinched the below graphic from.
 
 ![](git-flow.svg)
+
+## Git Commit Messages
+
+Firstly, adhering to this isn't a must, but it represents good development practice. A good git commit takes roughly the following form:
+
+* A brief title (prefixed by a tag eg. bug fix, +feature) MAX 50ish chars
+* A longer description, written in present tense (eg. "Adds red buttons to home page") limited to 72 chars per line
+
+I've adopted this approach from [this tbaggery post](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) which many people point to as an early gold standard for commit messages. It points out loads of benefits of following this 'standard'.
+
+[This blog post](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message) which borrows a lot from the tbaggery one offers a neat `.vimrc` addition which helps in sticking to these recommendations.
